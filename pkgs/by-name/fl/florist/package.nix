@@ -33,5 +33,4 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [ lutzberger ];
     platforms = lib.platforms.linux;
   };
-
 }
