@@ -17,9 +17,7 @@ stdenv.mkDerivation rec {
     hash = "sha256-EFGmcQfWpxEWfsAoQrHegTlizl6siE8obKx+fCpVwUQ=";
   };
 
-  configurePhase = ''
-    ./configure --enable-shared --prefix=$out
-  '';
+  configureFlags = [ "--enable-shared" ];
 
   nativeBuildInputs = [
     gnat13
