@@ -9,6 +9,7 @@
 stdenv.mkDerivation rec {
   name = "florist";
   version = "24.2";
+
   src = fetchFromGitHub {
     owner = "adacore";
     repo = "florist";
